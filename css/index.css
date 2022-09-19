@@ -147,6 +147,7 @@ article::after {
     margin-bottom: 0.2rem;
   }
 }
+
 @media screen and (max-width: 800px) {
   .navbar-list li {
     padding: 0 0.3rem;
@@ -155,6 +156,7 @@ article::after {
     max-width: 60vw;
 
 }
+
 @media screen and (max-width: 600px) {
   img {
     display: none;
