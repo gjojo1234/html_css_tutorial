@@ -36,7 +36,7 @@ body {
 .logo {
   position: absolute;
   top: 4rem;
-  left: 4rem;
+  left: 5rem;
   font-size: 2rem;
   text-transform: capitalize;
   color: var(--clr-grey-100);
@@ -88,9 +88,10 @@ body {
 
   height: calc(100vh - 5rem);
   align-items: center;
+  justify-content: space-between;
 }
 .section1 article {
-  margin: 4rem;
+  margin: 5rem;
   width: 30vw;
 }
 article h1 {
@@ -109,4 +110,7 @@ article {
   display: flex;
   align-content: center;
   flex-wrap: wrap;
+}
+img {
+  transform: translateX(-5rem);
 }
