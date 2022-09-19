@@ -103,7 +103,7 @@ body {
 }
 .section1 article {
   margin: 5rem;
-  width: 30vw;
+  max-width: 30vw;
 }
 article h1 {
   font-size: 2rem;
@@ -137,4 +137,29 @@ article::after {
   border-radius: 50%;
   border: 6px solid var(--clr-grey-100);
   transform: translate(-50%, 50%);
+}
+
+@media screen and (max-width: 1050px) {
+  .navbar-list li {
+    padding: 0 0.75rem;
+  }
+  .btn {
+    margin-bottom: 0.2rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navbar-list li {
+    padding: 0 0.3rem;
+  }
+  .section1 article {
+    max-width: 60vw;
+
+}
+@media screen and (max-width: 600px) {
+  img {
+    display: none;
+  }
+  .logo {
+    top: 7rem;
+  }
 }
