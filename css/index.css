@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+:root {
+  --clr-grey-100: #f3f4f6;
+  --clr-grey-200: #e5e7eb;
+  --clr-grey-300: #d1d5db;
+  --clr-emerald-300: #6ee7b7;
+  --clr-purple-700: #7e22ce;
+  --transition: all 0.3s linear;
+}
+.project {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    45deg,
+    var(--clr-purple-700),
+    var(--clr-emerald-300)
+  );
+}
+
+.navbar {
+  position: relative;
+  height: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.logo {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: var(--clr-grey-100);
+}
+
+.navbar-list li {
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 0 2rem;
+  text-transform: capitalize;
+  color: var(--clr-grey-200);
+  transition: var(--transition);
+}
+.navbar-list li:hover {
+  transform: scale(1.1);
+  color: var(--clr-grey-100);
+  cursor: pointer;
+}
+.btn {
+  margin-left: 2rem;
+  padding: 0.25rem 1.25rem;
+  font-size: 1.5rem;
+  color: var(--clr-grey-200);
+  background: transparent;
+  border-radius: 15px;
+  border: 1px solid var(--clr-grey-200);
+  transition: var(--transition);
+}
+.menu {
+  margin: 3rem;
+  font-size: 2rem;
+  color: var(--clr-grey-200);
+  transition: var(--transition);
+}
+.menu:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  color: var(--clr-grey-100);
+}
+.btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  color: var(--clr-grey-100);
+  border-color: var(--clr-grey-100);
+}
